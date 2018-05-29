@@ -12,10 +12,10 @@
 		D1A38BF21ECF2D99004F05EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF01ECF2D99004F05EB /* Main.storyboard */; };
 		D1A38BF41ECF2D99004F05EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF31ECF2D99004F05EB /* Assets.xcassets */; };
 		D1A38BF71ECF2D99004F05EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF51ECF2D99004F05EB /* LaunchScreen.storyboard */; };
-		D1EFF3BB1FCD55CC00AEF9CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF3BA1FCD55CC00AEF9CE /* GoogleService-Info.plist */; };
-		D1EFF3BD1FCD563400AEF9CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFF3BC1FCD563400AEF9CE /* Constants.swift */; };
 		D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575520BD8E59000BA1D0 /* FeedVC.swift */; };
 		D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */; };
+		D1FB575C20BD93CE000BA1D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */; };
+		D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575D20BD94D9000BA1D0 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +27,10 @@
 		D1A38BF31ECF2D99004F05EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1A38BF61ECF2D99004F05EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1A38BF81ECF2D99004F05EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1EFF3BA1FCD55CC00AEF9CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D1EFF3BC1FCD563400AEF9CE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1FB575520BD8E59000BA1D0 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVC.swift; sourceTree = "<group>"; };
+		D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1FB575D20BD94D9000BA1D0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E540D4CC8EF7D2BFC72DC0D0 /* Pods-Chit Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,15 +86,14 @@
 			children = (
 				D1FB575A20BD9016000BA1D0 /* Services */,
 				D1FB575920BD8FEC000BA1D0 /* Extensions */,
-				D1FB575420BD8E3A000BA1D0 /* Constants */,
 				D1FB575220BD8E1E000BA1D0 /* View */,
 				D1FB575120BD8E16000BA1D0 /* Controller */,
 				D1A38BF01ECF2D99004F05EB /* Main.storyboard */,
 				D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */,
 				D1A38BF31ECF2D99004F05EB /* Assets.xcassets */,
+				D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */,
 				D1A38BF51ECF2D99004F05EB /* LaunchScreen.storyboard */,
 				D1A38BF81ECF2D99004F05EB /* Info.plist */,
-				D1EFF3BA1FCD55CC00AEF9CE /* GoogleService-Info.plist */,
 			);
 			path = "Chit Chat";
 			sourceTree = "<group>";
@@ -115,14 +114,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D1FB575420BD8E3A000BA1D0 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				D1EFF3BC1FCD563400AEF9CE /* Constants.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		D1FB575920BD8FEC000BA1D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +124,7 @@
 		D1FB575A20BD9016000BA1D0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D1FB575D20BD94D9000BA1D0 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A38BF71ECF2D99004F05EB /* LaunchScreen.storyboard in Resources */,
-				D1EFF3BB1FCD55CC00AEF9CE /* GoogleService-Info.plist in Resources */,
+				D1FB575C20BD93CE000BA1D0 /* GoogleService-Info.plist in Resources */,
 				D1A38BF41ECF2D99004F05EB /* Assets.xcassets in Resources */,
 				D1A38BF21ECF2D99004F05EB /* Main.storyboard in Resources */,
 			);
@@ -270,10 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */,
 				D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */,
 				D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */,
 				D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */,
-				D1EFF3BD1FCD563400AEF9CE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,12 +391,15 @@
 			baseConfigurationReference = E540D4CC8EF7D2BFC72DC0D0 /* Pods-Chit Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2VJEFH2M;
 				INFOPLIST_FILE = "Chit Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coderearth.Chit-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -417,12 +412,15 @@
 			baseConfigurationReference = 375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2VJEFH2M;
 				INFOPLIST_FILE = "Chit Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coderearth.Chit-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
