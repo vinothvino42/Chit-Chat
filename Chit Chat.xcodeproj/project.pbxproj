@@ -16,6 +16,7 @@
 		D1ABFE8F20BEB27B009E553D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ABFE8E20BEB27B009E553D /* ProfileVC.swift */; };
 		D1AF3B6320BDD39D002FB567 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF3B6220BDD39D002FB567 /* AuthVC.swift */; };
 		D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */; };
+		D1BDA49120BEDA7000AABC03 /* UIView+ControllingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */; };
 		D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */; };
 		D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4424E20BE7F0400226D58 /* ShadowView.swift */; };
 		D1E4425120BE83B500226D58 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4425020BE83B500226D58 /* AuthService.swift */; };
@@ -38,6 +39,7 @@
 		D1ABFE8E20BEB27B009E553D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		D1AF3B6220BDD39D002FB567 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ControllingKeyboard.swift"; sourceTree = "<group>"; };
 		D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		D1E4424E20BE7F0400226D58 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		D1E4425020BE83B500226D58 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		D1FB575920BD8FEC000BA1D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			files = (
 				D1ABFE8F20BEB27B009E553D /* ProfileVC.swift in Sources */,
 				D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */,
+				D1BDA49120BEDA7000AABC03 /* UIView+ControllingKeyboard.swift in Sources */,
 				D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */,
 				D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */,
 				D1E4425120BE83B500226D58 /* AuthService.swift in Sources */,

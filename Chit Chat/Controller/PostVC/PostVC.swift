@@ -20,6 +20,9 @@ class PostVC: UIViewController {
         super.viewDidLoad()
 
         contentTextView.delegate = self
+        postBtn.bindToKeyboard()
+        //contentTextView.bindToKeyboard()
+        //profileImageView.bindToKeyboard()
     }
     
     @IBAction func postDidTap(_ sender: Any) {
