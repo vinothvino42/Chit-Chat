@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hOU-QG-pfW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="825" y="-321"/>
         </scene>
-        <!--View Controller-->
+        <!--AuthVC-->
         <scene sceneID="3wV-3b-wOe">
             <objects>
-                <viewController id="hOU-QG-pfW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="hOU-QG-pfW" customClass="AuthVC" customModule="Chit_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AFh-rT-8qj"/>
                         <viewControllerLayoutGuide type="bottom" id="UeW-nX-CYv"/>
@@ -80,7 +80,7 @@
                                 <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAt-XT-VDQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAt-XT-VDQ" customClass="ShadowView" customModule="Chit_Chat" customModuleProvider="target">
                                 <rect key="frame" x="16" y="159.5" width="343" height="348"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rcr-0z-CVv">
@@ -123,6 +123,9 @@
                                         <state key="normal" title=" by email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="xpo-dx-6xH" kind="presentation" id="RFx-2h-aGJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="-1863.2" y="29.23538230884558"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="co0-I0-TXB">
             <objects>
-                <viewController id="xpo-dx-6xH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="xpo-dx-6xH" customClass="LoginVC" customModule="Chit_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0Ce-OF-BvQ"/>
                         <viewControllerLayoutGuide type="bottom" id="QI3-kN-hnH"/>
@@ -177,7 +180,7 @@
                                 <state key="normal" image="close"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0p-XD-Sfp">
-                                <rect key="frame" x="147" y="259" width="80" height="33"/>
+                                <rect key="frame" x="147.5" y="259" width="80" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="nXc-o4-OGx"/>
                                 </constraints>
@@ -195,23 +198,23 @@
                                         <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-i5-cym">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-i5-cym" customClass="InsetTextField" customModule="Chit_Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="41" width="303" height="50"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MjK-1Y-Dke"/>
                                         </constraints>
-                                        <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MwL-lo-Tkb">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MwL-lo-Tkb" customClass="InsetTextField" customModule="Chit_Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="111" width="303" height="50"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Qa4-Qw-O0b"/>
                                         </constraints>
-                                        <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>

@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; };
+		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */; };
 		D1A38BF21ECF2D99004F05EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF01ECF2D99004F05EB /* Main.storyboard */; };
 		D1A38BF41ECF2D99004F05EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF31ECF2D99004F05EB /* Assets.xcassets */; };
 		D1A38BF71ECF2D99004F05EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF51ECF2D99004F05EB /* LaunchScreen.storyboard */; };
+		D1AF3B6320BDD39D002FB567 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF3B6220BDD39D002FB567 /* AuthVC.swift */; };
+		D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */; };
+		D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */; };
+		D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4424E20BE7F0400226D58 /* ShadowView.swift */; };
 		D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575520BD8E59000BA1D0 /* FeedVC.swift */; };
 		D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */; };
 		D1FB575C20BD93CE000BA1D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */; };
@@ -27,6 +31,10 @@
 		D1A38BF31ECF2D99004F05EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1A38BF61ECF2D99004F05EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1A38BF81ECF2D99004F05EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF3B6220BDD39D002FB567 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		D1E4424E20BE7F0400226D58 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		D1FB575520BD8E59000BA1D0 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVC.swift; sourceTree = "<group>"; };
 		D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -98,9 +106,35 @@
 			path = "Chit Chat";
 			sourceTree = "<group>";
 		};
+		D1AF3B6020BDD371002FB567 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF3B6420BDD3AC002FB567 /* LoginVC */,
+				D1AF3B6120BDD379002FB567 /* AuthVC */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D1AF3B6120BDD379002FB567 /* AuthVC */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF3B6220BDD39D002FB567 /* AuthVC.swift */,
+			);
+			path = AuthVC;
+			sourceTree = "<group>";
+		};
+		D1AF3B6420BDD3AC002FB567 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
 		D1FB575120BD8E16000BA1D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D1AF3B6020BDD371002FB567 /* New Group */,
 				D1FB575520BD8E59000BA1D0 /* FeedVC.swift */,
 				D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */,
 			);
@@ -110,6 +144,8 @@
 		D1FB575220BD8E1E000BA1D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */,
+				D1E4424E20BE7F0400226D58 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,8 +300,12 @@
 			files = (
 				D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */,
 				D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */,
+				D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */,
 				D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */,
+				D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */,
 				D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */,
+				D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */,
+				D1AF3B6320BDD39D002FB567 /* AuthVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +441,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -422,8 +462,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
