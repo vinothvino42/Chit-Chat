@@ -15,10 +15,17 @@ class AuthVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func loginWithFacebookDidTap(_ sender: Any) {
     }
 
+    @IBAction func loginWithGoogleDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func loginWithEmailDidTap(_ sender: Any) {
+        
+        let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC")
+        present(loginVC!, animated: true, completion: nil)
+    }
+    
 }
