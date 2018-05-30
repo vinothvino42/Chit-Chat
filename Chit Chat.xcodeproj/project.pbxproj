@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
 		D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */; };
 		D1A38BF21ECF2D99004F05EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF01ECF2D99004F05EB /* Main.storyboard */; };
 		D1A38BF41ECF2D99004F05EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A38BF31ECF2D99004F05EB /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chit_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.release.xcconfig"; sourceTree = "<group>"; };
+		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		D1A38BE91ECF2D99004F05EB /* Chit Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chit Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A38BF11ECF2D99004F05EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 				2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D111BD0020BEC1D4000534E7 /* PostVC */ = {
+			isa = PBXGroup;
+			children = (
+				D111BD0120BEC1EA000534E7 /* PostVC.swift */,
+			);
+			path = PostVC;
 			sourceTree = "<group>";
 		};
 		D1A38BE01ECF2D99004F05EB = {
@@ -153,6 +163,7 @@
 		D1FB575120BD8E16000BA1D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D111BD0020BEC1D4000534E7 /* PostVC */,
 				D1ABFE8D20BEB248009E553D /* ProfileVC */,
 				D1AF3B6120BDD379002FB567 /* AuthVC */,
 				D1AF3B6420BDD3AC002FB567 /* LoginVC */,
@@ -330,6 +341,7 @@
 				D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */,
 				D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */,
 				D1AF3B6320BDD39D002FB567 /* AuthVC.swift in Sources */,
+				D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
