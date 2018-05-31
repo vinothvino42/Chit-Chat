@@ -10,15 +10,13 @@ import UIKit
 
 class FeedCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
+    
+    func configureCell(profileImage: UIImage, email: String, content: String) {
+        self.profileImageView.image = profileImage
+        self.emailLabel.text = email
+        self.contentLabel.text = content
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

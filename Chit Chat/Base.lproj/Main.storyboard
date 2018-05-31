@@ -143,13 +143,56 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Cyr-so-dsU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedcell" rowHeight="100" id="Cyr-so-dsU" customClass="FeedCell" customModule="Chit_Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cyr-so-dsU" id="D6z-xo-Wc9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="DaM-Mx-q8M">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="A86-om-j5f"/>
+                                                        <constraint firstAttribute="width" constant="50" id="gmp-56-kZg"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5XI-BT-g3I">
+                                                    <rect key="frame" x="70" y="21" width="280" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@chitchat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sm-9o-8QW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="280" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="yh7-RA-oZv"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="B0U-o4-VuJ">
+                                                            <rect key="frame" x="0.0" y="26" width="280" height="32"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5XI-BT-g3I" firstAttribute="top" secondItem="D6z-xo-Wc9" secondAttribute="topMargin" constant="10" id="4dV-46-TiW"/>
+                                                <constraint firstItem="5XI-BT-g3I" firstAttribute="leading" secondItem="DaM-Mx-q8M" secondAttribute="trailing" constant="10" id="AYh-cY-sb3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5XI-BT-g3I" secondAttribute="trailing" constant="10" id="gPT-Qb-mDB"/>
+                                                <constraint firstItem="DaM-Mx-q8M" firstAttribute="top" secondItem="D6z-xo-Wc9" secondAttribute="top" constant="10" id="khW-dt-YTy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5XI-BT-g3I" secondAttribute="bottom" constant="10" id="kjQ-AP-ewe"/>
+                                                <constraint firstItem="DaM-Mx-q8M" firstAttribute="leading" secondItem="D6z-xo-Wc9" secondAttribute="leading" constant="10" id="qEq-Yj-L8O"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.16078431372549018" green="0.16862745098039217" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="B0U-o4-VuJ" id="uUo-TB-01z"/>
+                                            <outlet property="emailLabel" destination="5sm-9o-8QW" id="HUc-Lq-A5j"/>
+                                            <outlet property="profileImageView" destination="DaM-Mx-q8M" id="EM4-Tm-LTg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -166,6 +209,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="E6B-Tb-wx2"/>
+                    <connections>
+                        <outlet property="tableView" destination="q75-dl-U4Y" id="Zho-OH-wOp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSk-zy-5ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
