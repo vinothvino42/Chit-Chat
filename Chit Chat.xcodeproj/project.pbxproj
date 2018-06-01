@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
+		D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */; };
 		D191041D20C01C4800CC6B23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041C20C01C4800CC6B23 /* Message.swift */; };
 		D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041E20C0231B00CC6B23 /* FeedCell.swift */; };
 		D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chit_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.release.xcconfig"; sourceTree = "<group>"; };
 		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		D191041C20C01C4800CC6B23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D191041E20C0231B00CC6B23 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D1A38BE91ECF2D99004F05EB /* Chit Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chit Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,14 @@
 			path = PostVC;
 			sourceTree = "<group>";
 		};
+		D1190CEB20C1375B00F5CC45 /* CreateGroupsVC */ = {
+			isa = PBXGroup;
+			children = (
+				D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */,
+			);
+			path = CreateGroupsVC;
+			sourceTree = "<group>";
+		};
 		D191041B20C01C2900CC6B23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */,
+				D1190CEB20C1375B00F5CC45 /* CreateGroupsVC */,
 			);
 			path = GroupVC;
 			sourceTree = "<group>";
@@ -356,6 +367,7 @@
 				D1E4425120BE83B500226D58 /* AuthService.swift in Sources */,
 				D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */,
 				D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */,
+				D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */,
 				D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */,
 				D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */,
 				D191041D20C01C4800CC6B23 /* Message.swift in Sources */,
