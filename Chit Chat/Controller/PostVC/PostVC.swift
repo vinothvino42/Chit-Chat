@@ -25,6 +25,11 @@ class PostVC: UIViewController {
         //profileImageView.bindToKeyboard()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.emailLabel.text = Auth.auth().currentUser?.email
+    }
+    
     @IBAction func postDidTap(_ sender: Any) {
         if contentTextView.text != nil && contentTextView.text != "Write something here.." {
             postBtn.isEnabled = false
