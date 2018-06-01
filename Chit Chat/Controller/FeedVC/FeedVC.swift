@@ -27,7 +27,6 @@ class FeedVC: UIViewController {
             self.tableView.reloadData()
         }
     }
-
 }
 
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
