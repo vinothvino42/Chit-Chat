@@ -547,7 +547,7 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-26-Vh6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-26-Vh6">
                                         <rect key="frame" x="0.0" y="119" width="343" height="19"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -635,7 +635,7 @@
                         <outlet property="descriptionTextField" destination="2g8-U2-oMs" id="uCw-Vh-4ip"/>
                         <outlet property="doneBtn" destination="feF-UK-wxH" id="VD3-kg-6Eh"/>
                         <outlet property="emailTextField" destination="ZJp-Xa-KSB" id="JQ3-Wn-B1j"/>
-                        <outlet property="groupLabel" destination="Ft4-MS-MOy" id="eHu-sK-eic"/>
+                        <outlet property="groupMemberLabel" destination="sUf-26-Vh6" id="fjj-dT-Cu7"/>
                         <outlet property="tableView" destination="Pwl-NJ-5eA" id="YsD-j3-uEQ"/>
                         <outlet property="titleTextField" destination="ei1-jj-qdf" id="9Bn-J8-dwJ"/>
                     </connections>
