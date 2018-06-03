@@ -10,6 +10,7 @@
 		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
 		D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */; };
+		D184248020C42048005DF3FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184247F20C42048005DF3FC /* GroupCell.swift */; };
 		D191041D20C01C4800CC6B23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041C20C01C4800CC6B23 /* Message.swift */; };
 		D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041E20C0231B00CC6B23 /* FeedCell.swift */; };
 		D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 		375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.release.xcconfig"; sourceTree = "<group>"; };
 		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		D184247F20C42048005DF3FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		D191041C20C01C4800CC6B23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D191041E20C0231B00CC6B23 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D1A38BE91ECF2D99004F05EB /* Chit Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chit Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +210,7 @@
 				D1E4424E20BE7F0400226D58 /* ShadowView.swift */,
 				D191041E20C0231B00CC6B23 /* FeedCell.swift */,
 				D1F5C2E420C1CCCC005BF509 /* UserCell.swift */,
+				D184247F20C42048005DF3FC /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				D1ABFE8F20BEB27B009E553D /* ProfileVC.swift in Sources */,
 				D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */,
 				D1BDA49120BEDA7000AABC03 /* UIView+ControllingKeyboard.swift in Sources */,
+				D184248020C42048005DF3FC /* GroupCell.swift in Sources */,
 				D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */,
 				D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */,
 				D1E4425120BE83B500226D58 /* AuthService.swift in Sources */,
