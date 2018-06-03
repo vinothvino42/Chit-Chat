@@ -501,7 +501,7 @@
         <!--Group FeedVC-->
         <scene sceneID="yPQ-1p-H5w">
             <objects>
-                <viewController id="qdX-fN-PIS" customClass="GroupFeedVC" customModule="Chit_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="qdX-fN-PIS" customClass="GroupFeedVC" customModule="Chit_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lcu-UA-SVA"/>
                         <viewControllerLayoutGuide type="bottom" id="iP1-Xw-CyN"/>
