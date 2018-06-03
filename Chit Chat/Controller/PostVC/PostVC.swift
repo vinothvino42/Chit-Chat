@@ -33,7 +33,7 @@ class PostVC: UIViewController {
     @IBAction func postDidTap(_ sender: Any) {
         if contentTextView.text != nil && contentTextView.text != "Write something here.." {
             postBtn.isEnabled = false
-            DataService.instance.uploadPost(withMessage: contentTextView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, postComplete: { (isComplete) in
+            DataService.instance.uploadPost(withMessage: contentTextView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil, sendComplete: { (isComplete) in
                 if isComplete {
                     self.postBtn.isEnabled = false
                     self.dismiss(animated: true, completion: nil)

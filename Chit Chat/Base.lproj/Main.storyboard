@@ -545,7 +545,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GoH-6h-PSC">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="507"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="lNT-Sl-o1i" customClass="GroupFeedCell" customModule="Chit_Chat" customModuleProvider="target">
@@ -652,18 +652,19 @@
                             <constraint firstItem="GoH-6h-PSC" firstAttribute="top" secondItem="VEp-cX-deX" secondAttribute="bottom" id="AVk-du-Ntj"/>
                             <constraint firstAttribute="trailing" secondItem="vzH-Ej-SWA" secondAttribute="trailing" id="JYZ-Vb-G2v"/>
                             <constraint firstAttribute="trailing" secondItem="VEp-cX-deX" secondAttribute="trailing" constant="10" id="MA6-bS-tDJ"/>
+                            <constraint firstItem="iP1-Xw-CyN" firstAttribute="top" secondItem="vzH-Ej-SWA" secondAttribute="bottom" id="bMF-7p-idZ"/>
                             <constraint firstAttribute="trailing" secondItem="GoH-6h-PSC" secondAttribute="trailing" id="d8d-jn-cPA"/>
                             <constraint firstAttribute="trailing" secondItem="iN5-xW-zX8" secondAttribute="trailing" id="fUT-fn-XfF"/>
                             <constraint firstItem="iN5-xW-zX8" firstAttribute="leading" secondItem="vuv-QQ-6gg" secondAttribute="leading" id="gfB-TK-BzE"/>
-                            <constraint firstItem="iP1-Xw-CyN" firstAttribute="top" secondItem="GoH-6h-PSC" secondAttribute="bottom" id="iRp-Dl-lMS"/>
                             <constraint firstItem="iN5-xW-zX8" firstAttribute="top" secondItem="vuv-QQ-6gg" secondAttribute="top" id="jqX-Ta-tvM"/>
                             <constraint firstItem="vzH-Ej-SWA" firstAttribute="leading" secondItem="vuv-QQ-6gg" secondAttribute="leading" id="tWb-tr-coi"/>
+                            <constraint firstItem="vzH-Ej-SWA" firstAttribute="top" secondItem="GoH-6h-PSC" secondAttribute="bottom" id="weQ-6X-0yE"/>
                             <constraint firstAttribute="bottom" secondItem="vzH-Ej-SWA" secondAttribute="bottom" id="xEz-CO-vLZ"/>
                             <constraint firstItem="VEp-cX-deX" firstAttribute="top" secondItem="iN5-xW-zX8" secondAttribute="bottom" id="xWI-xv-RYI"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="groupFeedTableView" destination="GoH-6h-PSC" id="UNG-UB-Tz9"/>
+                        <outlet property="groupFeedTableView" destination="GoH-6h-PSC" id="Oxp-o3-pyG"/>
                         <outlet property="groupTitleLbl" destination="uiz-Ko-0bk" id="e4K-YP-lKy"/>
                         <outlet property="membersLbl" destination="VEp-cX-deX" id="yO3-u2-VKV"/>
                         <outlet property="messageTextField" destination="eEH-o0-EvV" id="IXn-6p-Tdg"/>
@@ -673,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxc-iU-YvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925.60000000000002" y="1110.4947526236883"/>
+            <point key="canvasLocation" x="902" y="1176"/>
         </scene>
         <!--Create GroupVC-->
         <scene sceneID="AYK-A2-CM2">
