@@ -11,6 +11,7 @@
 		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
 		D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */; };
 		D184248020C42048005DF3FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184247F20C42048005DF3FC /* GroupCell.swift */; };
+		D184248220C4265A005DF3FC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184248120C4265A005DF3FC /* Group.swift */; };
 		D191041D20C01C4800CC6B23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041C20C01C4800CC6B23 /* Message.swift */; };
 		D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041E20C0231B00CC6B23 /* FeedCell.swift */; };
 		D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A38BEC1ECF2D99004F05EB /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		D184247F20C42048005DF3FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		D184248120C4265A005DF3FC /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		D191041C20C01C4800CC6B23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D191041E20C0231B00CC6B23 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D1A38BE91ECF2D99004F05EB /* Chit Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chit Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D191041C20C01C4800CC6B23 /* Message.swift */,
+				D184248120C4265A005DF3FC /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				D1E4425120BE83B500226D58 /* AuthService.swift in Sources */,
 				D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */,
 				D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */,
+				D184248220C4265A005DF3FC /* Group.swift in Sources */,
 				D1F5C2E520C1CCCC005BF509 /* UserCell.swift in Sources */,
 				D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */,
 				D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */,
