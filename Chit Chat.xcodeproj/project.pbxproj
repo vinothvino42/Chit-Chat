@@ -30,6 +30,8 @@
 		D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */; };
 		D1FB575C20BD93CE000BA1D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */; };
 		D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FB575D20BD94D9000BA1D0 /* DataService.swift */; };
+		D1FDABE420C459C2006E8A5C /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDABE320C459C2006E8A5C /* GroupFeedCell.swift */; };
+		D1FDABE720C45A60006E8A5C /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDABE620C45A60006E8A5C /* GroupFeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVC.swift; sourceTree = "<group>"; };
 		D1FB575B20BD93CE000BA1D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D1FB575D20BD94D9000BA1D0 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D1FDABE320C459C2006E8A5C /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		D1FDABE620C45A60006E8A5C /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		E540D4CC8EF7D2BFC72DC0D0 /* Pods-Chit Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				D1FB575720BD8EF7000BA1D0 /* GroupVC.swift */,
+				D1FDABE520C45A42006E8A5C /* GroupFeedVC */,
 				D1190CEB20C1375B00F5CC45 /* CreateGroupsVC */,
 			);
 			path = GroupVC;
@@ -214,6 +219,7 @@
 				D191041E20C0231B00CC6B23 /* FeedCell.swift */,
 				D1F5C2E420C1CCCC005BF509 /* UserCell.swift */,
 				D184247F20C42048005DF3FC /* GroupCell.swift */,
+				D1FDABE320C459C2006E8A5C /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +239,14 @@
 				D1E4425020BE83B500226D58 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D1FDABE520C45A42006E8A5C /* GroupFeedVC */ = {
+			isa = PBXGroup;
+			children = (
+				D1FDABE620C45A60006E8A5C /* GroupFeedVC.swift */,
+			);
+			path = GroupFeedVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +388,8 @@
 				D184248020C42048005DF3FC /* GroupCell.swift in Sources */,
 				D1FB575620BD8E59000BA1D0 /* FeedVC.swift in Sources */,
 				D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */,
+				D1FDABE720C45A60006E8A5C /* GroupFeedVC.swift in Sources */,
+				D1FDABE420C459C2006E8A5C /* GroupFeedCell.swift in Sources */,
 				D1E4425120BE83B500226D58 /* AuthService.swift in Sources */,
 				D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */,
 				D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */,
