@@ -1,14 +1,20 @@
 # Chit-Chat
-[![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org)
+[![Swift 4](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org)
 [![Twitter: @vinothvino42](https://img.shields.io/badge/Contact-Twitter-blue.svg?style=flat)](https://twitter.com/vinothvino42)
 
-A simple real time chat app for iOS. It's built using Swift and Firebase.
+A simple real time chat application for iOS.
 
-![Alt Text](https://github.com/vinothvino42/Chit-Chat/blob/master/Chat%20App%20Gif.gif)
+<h3 align="center">
+<img src="ChitChatOne.png" alt="Screenshot of Chit Chat for iOS" />
+</h3>
+
+<h3 align="center">
+<img src="ChitChatTwo.png" alt="Screenshot of Chit Chat for iOS" />
+</h3>
 
 ## Compatibility
 
-This project is written in Swift 3 and requires Xcode 8 to build and run.
+This project is written in Swift 4 and requires Xcode 9.1 to build and run.
 
 ## Running
 
