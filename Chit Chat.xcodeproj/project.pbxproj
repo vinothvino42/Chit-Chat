@@ -22,6 +22,7 @@
 		D1AF3B6320BDD39D002FB567 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF3B6220BDD39D002FB567 /* AuthVC.swift */; };
 		D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */; };
 		D1BDA49120BEDA7000AABC03 /* UIView+ControllingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */; };
+		D1C1BD4F20C4D5F80061F3F6 /* UIViewController+PresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1BD4E20C4D5F70061F3F6 /* UIViewController+PresentVC.swift */; };
 		D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */; };
 		D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4424E20BE7F0400226D58 /* ShadowView.swift */; };
 		D1E4425120BE83B500226D58 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4425020BE83B500226D58 /* AuthService.swift */; };
@@ -53,6 +54,7 @@
 		D1AF3B6220BDD39D002FB567 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		D1AF3B6520BDD3CB002FB567 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ControllingKeyboard.swift"; sourceTree = "<group>"; };
+		D1C1BD4E20C4D5F70061F3F6 /* UIViewController+PresentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentVC.swift"; sourceTree = "<group>"; };
 		D1E4424C20BE7ACF00226D58 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		D1E4424E20BE7F0400226D58 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		D1E4425020BE83B500226D58 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				D1F5C2E420C1CCCC005BF509 /* UserCell.swift */,
 				D184247F20C42048005DF3FC /* GroupCell.swift */,
 				D1FDABE320C459C2006E8A5C /* GroupFeedCell.swift */,
+				D1C1BD4E20C4D5F70061F3F6 /* UIViewController+PresentVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				D1F5C2E520C1CCCC005BF509 /* UserCell.swift in Sources */,
 				D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */,
 				D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */,
+				D1C1BD4F20C4D5F80061F3F6 /* UIViewController+PresentVC.swift in Sources */,
 				D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */,
 				D191041D20C01C4800CC6B23 /* Message.swift in Sources */,
 				D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */,
