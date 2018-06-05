@@ -10,4 +10,5 @@ target 'Chit Chat' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'GoogleSignIn'
 end

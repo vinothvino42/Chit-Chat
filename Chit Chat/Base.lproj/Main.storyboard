@@ -1066,10 +1066,10 @@
             </objects>
             <point key="canvasLocation" x="-1106.4000000000001" y="28.335832083958024"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="drX-o8-Aof">
             <objects>
-                <tabBarController id="G6s-sE-Yd9" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" id="G6s-sE-Yd9" customClass="TabBarVC" customModule="Chit_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NuP-rv-LEx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

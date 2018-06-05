@@ -10,6 +10,7 @@
 		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
 		D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */; };
+		D182EAF920C6602D0024ACAF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182EAF820C6602D0024ACAF /* TabBarVC.swift */; };
 		D184248020C42048005DF3FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184247F20C42048005DF3FC /* GroupCell.swift */; };
 		D184248220C4265A005DF3FC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184248120C4265A005DF3FC /* Group.swift */; };
 		D191041D20C01C4800CC6B23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191041C20C01C4800CC6B23 /* Message.swift */; };
@@ -40,6 +41,7 @@
 		375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.release.xcconfig"; sourceTree = "<group>"; };
 		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		D182EAF820C6602D0024ACAF /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		D184247F20C42048005DF3FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		D184248120C4265A005DF3FC /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		D191041C20C01C4800CC6B23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 				D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */,
 			);
 			path = CreateGroupsVC;
+			sourceTree = "<group>";
+		};
+		D182EAF720C660010024ACAF /* TBC */ = {
+			isa = PBXGroup;
+			children = (
+				D182EAF820C6602D0024ACAF /* TabBarVC.swift */,
+			);
+			path = TBC;
 			sourceTree = "<group>";
 		};
 		D191041B20C01C2900CC6B23 /* Model */ = {
@@ -203,6 +213,7 @@
 		D1FB575120BD8E16000BA1D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D182EAF720C660010024ACAF /* TBC */,
 				D111BD0020BEC1D4000534E7 /* PostVC */,
 				D1ABFE8D20BEB248009E553D /* ProfileVC */,
 				D1AF3B6120BDD379002FB567 /* AuthVC */,
@@ -332,11 +343,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
@@ -369,9 +382,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -393,6 +409,7 @@
 				D1AF3B6620BDD3CB002FB567 /* LoginVC.swift in Sources */,
 				D1FDABE720C45A60006E8A5C /* GroupFeedVC.swift in Sources */,
 				D1FDABE420C459C2006E8A5C /* GroupFeedCell.swift in Sources */,
+				D182EAF920C6602D0024ACAF /* TabBarVC.swift in Sources */,
 				D1E4425120BE83B500226D58 /* AuthService.swift in Sources */,
 				D1A38BED1ECF2D99004F05EB /* AppDelegate.swift in Sources */,
 				D191041F20C0231B00CC6B23 /* FeedCell.swift in Sources */,
