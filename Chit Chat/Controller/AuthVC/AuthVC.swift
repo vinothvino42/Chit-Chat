@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FBSDKLoginKit
 
 class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
 
@@ -24,7 +25,34 @@ class AuthVC: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
         }
     }
     @IBAction func loginWithFacebookDidTap(_ sender: Any) {
-        
+        let fbLoginManager = FBSDKLoginManager()
+        fbLoginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self) { (result, error) in
+            if let error = error {
+                print("Facebook failed to login : ",error.localizedDescription)
+                return
+            }
+            guard let accessToken = FBSDKAccessToken.current() else {
+                print("Failed to get accessToken")
+                return
+            }
+            let credentials = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+            Auth.auth().signIn(with: credentials, completion: { (user, error) in
+                if let error = error {
+                    let alert = UIAlertController(title: "Failed to Login with FB", message: "\(error.localizedDescription)", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
+                print("User logged in using google account")
+                guard let email = user?.email else { return }
+                guard let provider = user?.providerID else { return }
+                
+                let userData = ["provider": provider, "email": email]
+                DataService.instance.createDBUser(uid: (user?.uid)!, userData: userData)
+                self.dismiss(animated: true, completion: nil)
+            })
+        }
     }
 
     //MARK: - Google SignIn methods
