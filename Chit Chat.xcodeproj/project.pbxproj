@@ -10,6 +10,9 @@
 		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
 		D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */; };
+		D17FD9D220C855B500DC4769 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FD9D120C855B500DC4769 /* StorageService.swift */; };
+		D17FD9D420C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FD9D320C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift */; };
+		D17FD9D620C856E400DC4769 /* UIImage+RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FD9D520C856E400DC4769 /* UIImage+RoundedImage.swift */; };
 		D182EAF920C6602D0024ACAF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182EAF820C6602D0024ACAF /* TabBarVC.swift */; };
 		D184248020C42048005DF3FC /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184247F20C42048005DF3FC /* GroupCell.swift */; };
 		D184248220C4265A005DF3FC /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184248120C4265A005DF3FC /* Group.swift */; };
@@ -41,6 +44,9 @@
 		375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.release.xcconfig"; sourceTree = "<group>"; };
 		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		D17FD9D120C855B500DC4769 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		D17FD9D320C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CurrentTimeInMilliSeconds.swift"; sourceTree = "<group>"; };
+		D17FD9D520C856E400DC4769 /* UIImage+RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RoundedImage.swift"; sourceTree = "<group>"; };
 		D182EAF820C6602D0024ACAF /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		D184247F20C42048005DF3FC /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		D184248120C4265A005DF3FC /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -242,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */,
+				D17FD9D320C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift */,
+				D17FD9D520C856E400DC4769 /* UIImage+RoundedImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 			children = (
 				D1FB575D20BD94D9000BA1D0 /* DataService.swift */,
 				D1E4425020BE83B500226D58 /* AuthService.swift */,
+				D17FD9D120C855B500DC4769 /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1ABFE8F20BEB27B009E553D /* ProfileVC.swift in Sources */,
+				D17FD9D220C855B500DC4769 /* StorageService.swift in Sources */,
 				D1FB575E20BD94D9000BA1D0 /* DataService.swift in Sources */,
 				D1BDA49120BEDA7000AABC03 /* UIView+ControllingKeyboard.swift in Sources */,
 				D184248020C42048005DF3FC /* GroupCell.swift in Sources */,
@@ -424,9 +434,11 @@
 				D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */,
 				D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */,
 				D1C1BD4F20C4D5F80061F3F6 /* UIViewController+PresentVC.swift in Sources */,
+				D17FD9D420C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift in Sources */,
 				D1FB575820BD8EF7000BA1D0 /* GroupVC.swift in Sources */,
 				D191041D20C01C4800CC6B23 /* Message.swift in Sources */,
 				D1E4424D20BE7ACF00226D58 /* InsetTextField.swift in Sources */,
+				D17FD9D620C856E400DC4769 /* UIImage+RoundedImage.swift in Sources */,
 				D1AF3B6320BDD39D002FB567 /* AuthVC.swift in Sources */,
 				D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */,
 			);
