@@ -10,6 +10,7 @@
 		1EA3C78D95BA94476C5FF2AF /* Pods_Chit_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2817C748B0FB7F7F0B4EE529 /* Pods_Chit_Chat.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D111BD0220BEC1EA000534E7 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111BD0120BEC1EA000534E7 /* PostVC.swift */; };
 		D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */; };
+		D15165D020C958DF00E910FA /* KVNProgress+ShowProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15165CF20C958DF00E910FA /* KVNProgress+ShowProgress.swift */; };
 		D17FD9D220C855B500DC4769 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FD9D120C855B500DC4769 /* StorageService.swift */; };
 		D17FD9D420C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FD9D320C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift */; };
 		D17FD9D620C856E400DC4769 /* UIImage+RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FD9D520C856E400DC4769 /* UIImage+RoundedImage.swift */; };
@@ -44,6 +45,7 @@
 		375BB4943C620124614E3D94 /* Pods-Chit Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chit Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chit Chat/Pods-Chit Chat.release.xcconfig"; sourceTree = "<group>"; };
 		D111BD0120BEC1EA000534E7 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		D1190CEE20C137B000F5CC45 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		D15165CF20C958DF00E910FA /* KVNProgress+ShowProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KVNProgress+ShowProgress.swift"; sourceTree = "<group>"; };
 		D17FD9D120C855B500DC4769 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D17FD9D320C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CurrentTimeInMilliSeconds.swift"; sourceTree = "<group>"; };
 		D17FD9D520C856E400DC4769 /* UIImage+RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RoundedImage.swift"; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				D1BDA49020BEDA7000AABC03 /* UIView+ControllingKeyboard.swift */,
 				D17FD9D320C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift */,
 				D17FD9D520C856E400DC4769 /* UIImage+RoundedImage.swift */,
+				D15165CF20C958DF00E910FA /* KVNProgress+ShowProgress.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -367,6 +371,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,6 +437,7 @@
 				D184248220C4265A005DF3FC /* Group.swift in Sources */,
 				D1F5C2E520C1CCCC005BF509 /* UserCell.swift in Sources */,
 				D1190CEF20C137B000F5CC45 /* CreateGroupVC.swift in Sources */,
+				D15165D020C958DF00E910FA /* KVNProgress+ShowProgress.swift in Sources */,
 				D1E4424F20BE7F0400226D58 /* ShadowView.swift in Sources */,
 				D1C1BD4F20C4D5F80061F3F6 /* UIViewController+PresentVC.swift in Sources */,
 				D17FD9D420C855FD00DC4769 /* String+CurrentTimeInMilliSeconds.swift in Sources */,

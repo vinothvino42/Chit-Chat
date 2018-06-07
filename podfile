@@ -12,4 +12,5 @@ target 'Chit Chat' do
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'
+  pod 'KVNProgress'
 end

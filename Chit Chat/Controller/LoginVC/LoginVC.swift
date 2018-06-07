@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class LoginVC: UIViewController {
 
@@ -21,10 +22,11 @@ class LoginVC: UIViewController {
     
     @IBAction func signInDidTap(_ sender: Any) {
         if emailTextField.text != nil && passwordTextField.text != nil {
-            
+            KVNProgress.showProgress()
             AuthService.instance.loginUser(withEmail: emailTextField.text!, withPassword: passwordTextField.text!, loginComplete: { (success, loginError) in
                 if success {
                     self.dismiss(animated: true, completion: nil)
+                    KVNProgress.dismiss()
                 } else {
                     print(String(describing: loginError?.localizedDescription))
                 }
@@ -34,9 +36,11 @@ class LoginVC: UIViewController {
                         AuthService.instance.loginUser(withEmail: self.emailTextField.text!, withPassword: self.passwordTextField.text!, loginComplete: { (success, nil) in
                             self.dismiss(animated: true, completion: nil)
                             print("Successfully registered user")
+                            KVNProgress.dismiss()
                         })
                     } else {
                         print(String(describing: registrationError?.localizedDescription))
+                        KVNProgress.dismiss()
                     }
                 })
             })

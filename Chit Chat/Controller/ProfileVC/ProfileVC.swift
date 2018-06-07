@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import KVNProgress
 
 class ProfileVC: UIViewController {
 
@@ -77,11 +78,14 @@ class ProfileVC: UIViewController {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure ?", preferredStyle: .actionSheet)
         let logoutAction = UIAlertAction(title: "Logout", style: .destructive) { (alertAction) in
             do {
+                KVNProgress.showProgress()
                 try Auth.auth().signOut()
                 let authVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC")
                 self.present(authVC!, animated: true, completion: nil)
+                KVNProgress.dismiss()
             } catch {
-                    print(error)
+                print(error)
+                KVNProgress.dismiss()
             }
         }
         logoutPopup.addAction(logoutAction)
@@ -102,6 +106,14 @@ extension ProfileVC: UIImagePickerControllerDelegate, UINavigationControllerDele
                 print("Image uploaded to Firebase Storage")
             } else {
                 print("Failed to upload image to Firebase Storage",error?.localizedDescription)
+                let alert = UIAlertController(title: "Failed to upload image", message: "\(error?.localizedDescription)", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .default, handler: { (alertAction) in
+                    self.profileImageView.image = UIImage(named: "defaultProfileImage")
+                    self.profileImageView.contentMode = .scaleAspectFit
+                    self.profileImageView.setCircleImageView()
+                })
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
