@@ -14,8 +14,13 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
-    func configureCell(profileImage: UIImage, email: String, content: String) {
-        self.profileImageView.image = profileImage
+    func configureCell(profileImageURL: URL, email: String, content: String) {
+        if profileImageURL.absoluteString != "" {
+            self.profileImageView.af_setImage(withURL: profileImageURL)
+        } else {
+            self.profileImageView.image = UIImage(named: "defaultProfileImage")
+        }
+        self.profileImageView.setCircleImageView()
         self.emailLabel.text = email
         self.contentLabel.text = content
     }

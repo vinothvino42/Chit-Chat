@@ -40,10 +40,10 @@ extension FeedVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "feedcell") as? FeedCell else { return UITableViewCell() }
-        let image = UIImage(named: "defaultProfileImage")
         let message = messageArray[indexPath.row]
-        DataService.instance.getUsername(forUID: message.senderId) { (returnedUsername) in
-            cell.configureCell(profileImage: image!, email: returnedUsername, content: message.content)
+        DataService.instance.getUsernameAndProfilePictureURL(forUID: message.senderId) { (returnedUsername, returnedProfileImageURL) in
+            guard let url = URL(string: returnedProfileImageURL) else { return }
+            cell.configureCell(profileImageURL: url, email: returnedUsername, content: message.content)
         }
         return cell
     }

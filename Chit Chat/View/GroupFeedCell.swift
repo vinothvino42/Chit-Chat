@@ -14,8 +14,13 @@ class GroupFeedCell: UITableViewCell {
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var contentLbl: UILabel!
     
-    func configureCell(profileImage: UIImage, email: String, content: String) {
-        self.profileImage.image = profileImage
+    func configureCell(profileImageURL: URL, email: String, content: String) {
+        if profileImageURL.absoluteString != "" {
+            self.profileImage.af_setImage(withURL: profileImageURL)
+        } else {
+            self.profileImage.image = UIImage(named: "defaultProfileImage")
+        }
+        self.profileImage.setCircleImageView()
         self.emailLbl.text = email
         self.contentLbl.text = content
     }
