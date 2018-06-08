@@ -102,6 +102,18 @@ class DataService {
         }
     }
     
+    func getCurrentUserProfilePicture(userUID: String, handler: @escaping (_ imageURL: String)-> ()) {
+        REF_USERS.observe(.value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if user.key == userUID {
+                    guard let userProfileImageURL = user.childSnapshot(forPath: "profileImageURL").value as? String else { return }
+                    handler(userProfileImageURL)
+                }
+            }
+        }
+    }
+    
     func getIds(forUsername usernames: [String], handler: @escaping (_ uidArray: [String]) -> ()) {
         REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
             var idArray = [String]()
