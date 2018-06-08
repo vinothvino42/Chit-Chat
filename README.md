@@ -2,7 +2,7 @@
 [![Swift 4](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org)
 [![Twitter: @vinothvino42](https://img.shields.io/badge/Contact-Twitter-blue.svg?style=flat)](https://twitter.com/vinothvino42)
 
-A simple real time chat application for iOS.
+A simple real time chat application have the features to upload post, create groups, invite users and more.
 
 <h3 align="center">
 <img src="ChitChatOne.png" alt="Screenshot of Chit Chat for iOS" />
