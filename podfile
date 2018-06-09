@@ -8,7 +8,7 @@ target 'Chit Chat' do
   # Pods for Chit Chat
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
-  pod 'Firebase/Auth'
+  pod 'Firebase/Auth', '~> 5.2.0'
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
   pod 'FBSDKLoginKit'

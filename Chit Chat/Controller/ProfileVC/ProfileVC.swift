@@ -89,6 +89,7 @@ class ProfileVC: UIViewController {
         let logoutPopup = UIAlertController(title: "Logout?", message: "Are you sure ?", preferredStyle: .actionSheet)
         let logoutAction = UIAlertAction(title: "Logout", style: .destructive) { (alertAction) in
             do {
+                self.profileImageView.image = UIImage(named: "defaultProfileImage")
                 KVNProgress.showProgress()
                 try Auth.auth().signOut()
                 let authVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC")

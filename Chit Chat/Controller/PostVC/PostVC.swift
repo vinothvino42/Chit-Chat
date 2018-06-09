@@ -19,15 +19,23 @@ class PostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        contentTextView.delegate = self
-        postBtn.bindToKeyboard()
-        //contentTextView.bindToKeyboard()
-        //profileImageView.bindToKeyboard()
+        initialSetupPostView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.emailLabel.text = Auth.auth().currentUser?.email
+    }
+    
+    func initialSetupPostView() {
+        contentTextView.delegate = self
+        postBtn.bindToKeyboard()
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        DataService.instance.getCurrentUserProfilePicture(userUID: uid) { (imageURL) in
+            guard let url = URL(string: imageURL) else { return }
+            self.profileImageView.af_setImage(withURL: url)
+            self.profileImageView.setCircleImageView()
+        }
     }
     
     @IBAction func postDidTap(_ sender: Any) {
